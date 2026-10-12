@@ -11,11 +11,11 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 5.0,
     reviewsCount: 142,
-    image: "/assets/mumbai_raja_table.jpg",
+    image: "/assets/mumbai_raja_table.webp",
     gallery: [
-      "/assets/mumbai_raja_table.jpg",
-      "/assets/mumbai_raja_sky.jpg",
-      "/assets/mumbai_raja_special_sky.jpg"
+      "/assets/mumbai_raja_table.webp",
+      "/assets/mumbai_raja_sky.webp",
+      "/assets/mumbai_raja_special_sky.webp"
     ],
     tag: "Bestseller",
     badge: "Official 2026 Edition",
@@ -46,11 +46,11 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 4.9,
     reviewsCount: 89,
-    image: "/assets/mumbai_raja_special_sky.jpg",
+    image: "/assets/mumbai_raja_special_sky.webp",
     gallery: [
-      "/assets/mumbai_raja_special_sky.jpg",
-      "/assets/mumbai_raja_sky.jpg",
-      "/assets/mumbai_raja_table.jpg"
+      "/assets/mumbai_raja_special_sky.webp",
+      "/assets/mumbai_raja_sky.webp",
+      "/assets/mumbai_raja_table.webp"
     ],
     tag: "Special Edition",
     badge: "Limited Run",
@@ -80,11 +80,11 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 5.0,
     reviewsCount: 116,
-    image: "/assets/parel_raja_special.jpg",
+    image: "/assets/parel_raja_special.webp",
     gallery: [
-      "/assets/parel_raja_special.jpg",
-      "/assets/parel_raja_sky.jpg",
-      "/assets/parel_raja_feta.jpg"
+      "/assets/parel_raja_special.webp",
+      "/assets/parel_raja_sky.webp",
+      "/assets/parel_raja_feta.webp"
     ],
     tag: "Iconic Idol",
     badge: "Fan Favorite",
@@ -114,11 +114,11 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 4.9,
     reviewsCount: 95,
-    image: "/assets/parel_raja_feta.jpg",
+    image: "/assets/parel_raja_feta.webp",
     gallery: [
-      "/assets/parel_raja_feta.jpg",
-      "/assets/parel_raja_sky.jpg",
-      "/assets/parel_raja_special.jpg"
+      "/assets/parel_raja_feta.webp",
+      "/assets/parel_raja_sky.webp",
+      "/assets/parel_raja_special.webp"
     ],
     tag: "Artisan Edition",
     badge: "Poetic Keepsake",
@@ -148,10 +148,10 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 5.0,
     reviewsCount: 178,
-    image: "/assets/chintamani_sky.jpg",
+    image: "/assets/chintamani_sky.webp",
     gallery: [
-      "/assets/chintamani_sky.jpg",
-      "/assets/mumbai_raja_table.jpg"
+      "/assets/chintamani_sky.webp",
+      "/assets/mumbai_raja_table.webp"
     ],
     tag: "Most Loved",
     badge: "Chintamani 105",
@@ -181,11 +181,11 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 5.0,
     reviewsCount: 260,
-    image: "/assets/lalbaugcha_raja.jpg",
+    image: "/assets/lalbaugcha_raja.webp",
     gallery: [
-      "/assets/lalbaugcha_raja.jpg",
-      "/assets/lalbaugcha_raja_sky.jpg",
-      "/assets/mumbai_raja_table.jpg"
+      "/assets/lalbaugcha_raja.webp",
+      "/assets/lalbaugcha_raja_sky.webp",
+      "/assets/mumbai_raja_table.webp"
     ],
     tag: "Bestseller",
     badge: "Emperor of Lalbaug",
@@ -215,12 +215,12 @@ export const PRODUCTS = [
     originalPrice: 550,
     rating: 5.0,
     reviewsCount: 64,
-    image: "/assets/mumbai_raja_table.jpg",
+    image: "/assets/mumbai_raja_table.webp",
     gallery: [
-      "/assets/mumbai_raja_table.jpg",
-      "/assets/chintamani_sky.jpg",
-      "/assets/parel_raja_feta.jpg",
-      "/assets/lalbaugcha_raja.jpg"
+      "/assets/mumbai_raja_table.webp",
+      "/assets/chintamani_sky.webp",
+      "/assets/parel_raja_feta.webp",
+      "/assets/lalbaugcha_raja.webp"
     ],
     tag: "Best Value",
     badge: "Save ₹101",
@@ -251,10 +251,10 @@ export const PRODUCTS = [
     originalPrice: 120,
     rating: 4.8,
     reviewsCount: 42,
-    image: "/assets/mahaganpati_studio.jpg",
+    image: "/assets/mahaganpati_studio.webp",
     gallery: [
-      "/assets/mahaganpati_studio.jpg",
-      "/assets/mahaganpati_sky.jpg"
+      "/assets/mahaganpati_studio.webp",
+      "/assets/mahaganpati_sky.webp"
     ],
     tag: "Spiritual Fusion",
     badge: "New Release",
@@ -284,10 +284,10 @@ export const PRODUCTS = [
     originalPrice: 140,
     rating: 4.9,
     reviewsCount: 38,
-    image: "/assets/mumbai_raja_2025.jpg",
+    image: "/assets/mumbai_raja_2025.webp",
     gallery: [
-      "/assets/mumbai_raja_2025.jpg",
-      "/assets/mumbai_raja_sky.jpg"
+      "/assets/mumbai_raja_2025.webp",
+      "/assets/mumbai_raja_sky.webp"
     ],
     tag: "Heritage Edition",
     badge: "2025 Legacy",
@@ -317,10 +317,10 @@ export const PRODUCTS = [
     originalPrice: 110,
     rating: 4.9,
     reviewsCount: 52,
-    image: "/assets/kalaa_logo.jpg",
+    image: "/assets/kalaa_logo.webp",
     gallery: [
-      "/assets/kalaa_logo.jpg",
-      "/assets/mumbai_raja_table.jpg"
+      "/assets/kalaa_logo.webp",
+      "/assets/mumbai_raja_table.webp"
     ],
     tag: "Waterproof",
     badge: "Pack of 6",
@@ -350,10 +350,10 @@ export const PRODUCTS = [
     originalPrice: 140,
     rating: 4.8,
     reviewsCount: 29,
-    image: "/assets/parel_raja_special.jpg",
+    image: "/assets/parel_raja_special.webp",
     gallery: [
-      "/assets/parel_raja_special.jpg",
-      "/assets/parel_raja_sky.jpg"
+      "/assets/parel_raja_special.webp",
+      "/assets/parel_raja_sky.webp"
     ],
     tag: "Festival Special",
     badge: "Limited Stock",
@@ -383,10 +383,10 @@ export const PRODUCTS = [
     originalPrice: 150,
     rating: 5.0,
     reviewsCount: 47,
-    image: "/assets/lalbaugcha_raja_sky.jpg",
+    image: "/assets/lalbaugcha_raja_sky.webp",
     gallery: [
-      "/assets/lalbaugcha_raja_sky.jpg",
-      "/assets/lalbaugcha_raja.jpg"
+      "/assets/lalbaugcha_raja_sky.webp",
+      "/assets/lalbaugcha_raja.webp"
     ],
     tag: "Mumbai Culture",
     badge: "Devotee Favorite",

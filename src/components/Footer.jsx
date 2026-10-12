@@ -90,6 +90,8 @@ export const Footer = () => {
                 width="52" 
                 height="52"
                 className="footer-logo-img" 
+                loading="lazy"
+                decoding="async"
               />
               <div>
                 <span className="footer-brand-title">KALAA CULTURE</span>

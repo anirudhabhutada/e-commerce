@@ -81,6 +81,8 @@ export const Header = () => {
                 className="brand-logo-img"
                 width="48"
                 height="48"
+                fetchPriority="high"
+                decoding="sync"
               />
             </div>
             <div className="brand-wordmark-container">

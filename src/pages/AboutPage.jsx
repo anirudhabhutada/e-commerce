@@ -53,7 +53,7 @@ export const AboutPage = () => {
             </p>
           </div>
           <div className="narrative-image-card">
-            <img src="/assets/mumbai_raja_table.jpg" alt="Mumbai Cha Raja stamp magnet on stone" className="narrative-img" />
+            <img src="/assets/mumbai_raja_table.webp" alt="Mumbai Cha Raja stamp magnet on stone" className="narrative-img" loading="lazy" decoding="async" width="480" height="480" />
             <span className="narrative-caption">The Signature Mumbai Cha Raja Special Edition Postage Magnet</span>
           </div>
         </div>
@@ -63,9 +63,11 @@ export const AboutPage = () => {
           <div className="emblem-card-inner">
             <div className="emblem-visual-col">
               <img 
-                src="/assets/kalaa_logo_clean.png" 
+                src="/assets/kalaa_logo_clean.webp" 
                 alt="Kalaa Culture Authentic Emblem" 
                 className="emblem-symbol-img"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="emblem-text-col">

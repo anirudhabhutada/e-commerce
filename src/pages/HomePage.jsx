@@ -24,37 +24,37 @@ export const HomePage = () => {
 
   const instagramPosts = [
     {
-      img: '/assets/mumbai_raja_table.jpg',
+      img: '/assets/mumbai_raja_table.webp',
       title: 'Mumbai Cha Raja • Special Edition',
       subtitle: 'Postage stamp fridge magnet on stone marble',
       link: BRAND_INFO.instagramUrl
     },
     {
-      img: '/assets/mumbai_raja_sky.jpg',
+      img: '/assets/mumbai_raja_sky.webp',
       title: 'Classic Darshan • Azure Sky',
       subtitle: 'Revered idol against Mumbai sky',
       link: BRAND_INFO.instagramUrl
     },
     {
-      img: '/assets/parel_raja_special.jpg',
+      img: '/assets/parel_raja_special.webp',
       title: 'गगनी झळकला परळचा राजा',
       subtitle: 'Standing king at sunset horizon',
       link: BRAND_INFO.instagramUrl
     },
     {
-      img: '/assets/chintamani_sky.jpg',
+      img: '/assets/chintamani_sky.webp',
       title: 'Chinchpoklicha Chintamani • 105 Years',
       subtitle: 'Sacred Sudarshan hand mudra',
       link: BRAND_INFO.instagramUrl
     },
     {
-      img: '/assets/parel_raja_feta.jpg',
+      img: '/assets/parel_raja_feta.webp',
       title: 'परळचा राजा • शाही फेटा',
       subtitle: 'Soulful eyes & Marathi poetry keepsake',
       link: BRAND_INFO.instagramUrl
     },
     {
-      img: '/assets/lalbaugcha_raja.jpg',
+      img: '/assets/lalbaugcha_raja.webp',
       title: 'Lalbaugcha Raja Darshan',
       subtitle: 'King of Lalbaug golden throne',
       link: BRAND_INFO.instagramUrl
@@ -125,18 +125,20 @@ export const HomePage = () => {
             <div className="hero-card-inner">
               <div className="hero-image-stamp-frame">
                 <img 
-                  src="/assets/mumbai_raja_table.jpg" 
+                  src="/assets/mumbai_raja_table.webp" 
                   alt="Mumbai Cha Raja Special Edition Stamp Fridge Magnet by Kalaa Culture"
                   className="hero-main-img"
                   width="480"
                   height="480"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
 
               {/* Floating Highlight Card */}
               <div className="hero-floating-badge">
                 <div className="floating-badge-thumb">
-                  <img src="/assets/chintamani_sky.jpg" alt="Chintamani magnet" width="56" height="56" />
+                  <img src="/assets/chintamani_sky.webp" alt="Chintamani magnet" width="56" height="56" />
                 </div>
                 <div className="floating-badge-info">
                   <span className="floating-badge-sub">2026 Collector Series</span>
@@ -163,7 +165,7 @@ export const HomePage = () => {
               tabIndex={0}
             >
               <div className="cat-img-box">
-                <img src="/assets/mumbai_raja_sky.jpg" alt="Stamp Fridge Magnets" />
+                <img src="/assets/mumbai_raja_sky.webp" alt="Stamp Fridge Magnets" loading="lazy" decoding="async" width="72" height="72" />
               </div>
               <div className="cat-text-box">
                 <span className="cat-tag">Signature Line</span>
@@ -180,7 +182,7 @@ export const HomePage = () => {
               tabIndex={0}
             >
               <div className="cat-img-box">
-                <img src="/assets/mumbai_raja_table.jpg" alt="Collector Box Sets" />
+                <img src="/assets/mumbai_raja_table.webp" alt="Collector Box Sets" loading="lazy" decoding="async" width="72" height="72" />
               </div>
               <div className="cat-text-box">
                 <span className="cat-tag">Gift Edition</span>
@@ -197,7 +199,7 @@ export const HomePage = () => {
               tabIndex={0}
             >
               <div className="cat-img-box">
-                <img src="/assets/mahaganpati_studio.jpg" alt="Heritage Keepsakes" />
+                <img src="/assets/mahaganpati_studio.webp" alt="Heritage Keepsakes" loading="lazy" decoding="async" width="72" height="72" />
               </div>
               <div className="cat-text-box">
                 <span className="cat-tag">Cultural Art</span>
@@ -214,7 +216,7 @@ export const HomePage = () => {
               tabIndex={0}
             >
               <div className="cat-img-box">
-                <img src="/assets/parel_raja_feta.jpg" alt="Die-Cut Stickers" />
+                <img src="/assets/parel_raja_feta.webp" alt="Die-Cut Stickers" loading="lazy" decoding="async" width="72" height="72" />
               </div>
               <div className="cat-text-box">
                 <span className="cat-tag">Waterproof</span>
@@ -266,10 +268,10 @@ export const HomePage = () => {
               
               <div className="spotlight-visual">
                 <div className="spotlight-stamp-grid">
-                  <img src="/assets/mumbai_raja_table.jpg" alt="Mumbai Cha Raja" className="spotlight-sub-img i1" />
-                  <img src="/assets/chintamani_sky.jpg" alt="Chinchpokli Chintamani" className="spotlight-sub-img i2" />
-                  <img src="/assets/parel_raja_special.jpg" alt="Parelcha Raja" className="spotlight-sub-img i3" />
-                  <img src="/assets/lalbaugcha_raja.jpg" alt="Lalbaugcha Raja" className="spotlight-sub-img i4" />
+                  <img src="/assets/mumbai_raja_table.webp" alt="Mumbai Cha Raja" className="spotlight-sub-img i1" loading="lazy" decoding="async" width="180" height="180" />
+                  <img src="/assets/chintamani_sky.webp" alt="Chinchpokli Chintamani" className="spotlight-sub-img i2" loading="lazy" decoding="async" width="180" height="180" />
+                  <img src="/assets/parel_raja_special.webp" alt="Parelcha Raja" className="spotlight-sub-img i3" loading="lazy" decoding="async" width="180" height="180" />
+                  <img src="/assets/lalbaugcha_raja.webp" alt="Lalbaugcha Raja" className="spotlight-sub-img i4" loading="lazy" decoding="async" width="180" height="180" />
                 </div>
                 <div className="spotlight-ribbon">
                   <span>5-Piece Complete Mandal Treasury</span>
@@ -360,14 +362,18 @@ export const HomePage = () => {
             <div className="heritage-visual-col">
               <div className="heritage-visual-stack">
                 <img 
-                  src="/assets/parel_raja_feta.jpg" 
+                  src="/assets/parel_raja_feta.webp" 
                   alt="Parelcha Raja Royal Feta Stamp Magnet" 
                   className="heritage-stack-img primary"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <img 
-                  src="/assets/lalbaugcha_raja_sky.jpg" 
+                  src="/assets/lalbaugcha_raja_sky.webp" 
                   alt="Holding stamp magnet outdoors" 
                   className="heritage-stack-img secondary"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
