@@ -1,0 +1,433 @@
+export const PRODUCTS = [
+  {
+    id: "mumbai-cha-raja-special-edition",
+    slug: "mumbai-cha-raja-special-edition",
+    name: "Mumbai Cha Raja (Special Edition) Stamp Magnet",
+    marathiName: "मुंबईचा राजा (विशेष आवृत्ती)",
+    subtitle: "Ganesh Galli • The Hand of Love Edition",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 5.0,
+    reviewsCount: 142,
+    image: "/assets/mumbai_raja_table.jpg",
+    gallery: [
+      "/assets/mumbai_raja_table.jpg",
+      "/assets/mumbai_raja_sky.jpg",
+      "/assets/mumbai_raja_special_sky.jpg"
+    ],
+    tag: "Bestseller",
+    badge: "Official 2026 Edition",
+    inStock: true,
+    stockCount: 18,
+    description: "An authentic collectible tribute to Ganesh Galli's iconic 'Mumbai Cha Raja'. Featuring the divine abhaya mudra blessing hand with a sacred peacock feather, Devanagari calligraphy, philatelic postage stamp serrated border, and the official 2026 postal collector seal.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "High-grade 3mm cast acrylic with anti-glare protective laminate & heavy-duty neodymium magnet",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet", "Collector Gloss Finish (+₹20)"],
+    features: [
+      "Authentic die-cut postage stamp perforated edges",
+      "Features 'Just Trust! This Hand You Will Be Fine' inscription",
+      "Permanent neodymium magnet holds up to 4 sheets of paper",
+      "Scratch-proof, waterproof matte finish",
+      "Official @kalaaculture watermark & Ganesh Galli postal stamp"
+    ]
+  },
+  {
+    id: "mumbai-cha-raja-classic-sky",
+    slug: "mumbai-cha-raja-classic-sky",
+    name: "Mumbai Cha Raja (Classic Darshan) Stamp Magnet",
+    marathiName: "मुंबईचा राजा (क्लासिक दर्शन)",
+    subtitle: "Sacred Darshan against Mumbai's Azure Sky",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 4.9,
+    reviewsCount: 89,
+    image: "/assets/mumbai_raja_special_sky.jpg",
+    gallery: [
+      "/assets/mumbai_raja_special_sky.jpg",
+      "/assets/mumbai_raja_sky.jpg",
+      "/assets/mumbai_raja_table.jpg"
+    ],
+    tag: "Special Edition",
+    badge: "Limited Run",
+    inStock: true,
+    stockCount: 14,
+    description: "The revered idol of Ganesh Galli captured in resplendent darshan against Mumbai's vibrant azure sky. Features the golden mukut, sacred vermillion tilak, Devanagari lettering, and philatelic stamp perforation.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "3mm Acrylic with UV-cured archival pigment ink & neodymium backing",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet"],
+    features: [
+      "Vivid high-definition temple darshan photography",
+      "Die-cut philatelic perforated stamp border",
+      "Strong magnetic grip suitable for fridges and metal cabinets",
+      "Fade-resistant UV coating"
+    ]
+  },
+  {
+    id: "parelcha-raja-sunset-magnet",
+    slug: "parelcha-raja-sunset-magnet",
+    name: "Parelcha Raja (Sunset Horizon) Stamp Magnet",
+    marathiName: "परळचा राजा (गगनी झळकला आवृत्ती)",
+    subtitle: "Gagani Zalakla • Standing Royal Darshan",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 5.0,
+    reviewsCount: 116,
+    image: "/assets/parel_raja_special.jpg",
+    gallery: [
+      "/assets/parel_raja_special.jpg",
+      "/assets/parel_raja_sky.jpg",
+      "/assets/parel_raja_feta.jpg"
+    ],
+    tag: "Iconic Idol",
+    badge: "Fan Favorite",
+    inStock: true,
+    stockCount: 22,
+    description: "Celebrated in Marathi lore as 'गगनी झळकला परळचा राजा'. Depicting the majestic standing posture of Parel's King playing the sacred dholak mridangam, bathed in sunset warmth against open fields.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "Cast Acrylic with Silk Touch Finish & Heavy-Duty Magnet",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet"],
+    features: [
+      "Authentic standing idol artwork with golden dholak",
+      "Postal stamp serrated edge aesthetic",
+      "Extra-strength magnet backing",
+      "Water-resistant and smudge-proof"
+    ]
+  },
+  {
+    id: "parelcha-raja-royal-feta-magnet",
+    slug: "parelcha-raja-royal-feta-magnet",
+    name: "Parelcha Raja (Royal Feta Profile) Stamp Magnet",
+    marathiName: "परळचा राजा (शाही फेटा आवृत्ती)",
+    subtitle: "Soulful Eyes • Traditional Marathi Turban",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 4.9,
+    reviewsCount: 95,
+    image: "/assets/parel_raja_feta.jpg",
+    gallery: [
+      "/assets/parel_raja_feta.jpg",
+      "/assets/parel_raja_sky.jpg",
+      "/assets/parel_raja_special.jpg"
+    ],
+    tag: "Artisan Edition",
+    badge: "Poetic Keepsake",
+    inStock: true,
+    stockCount: 11,
+    description: "Close-up portrait of Parelcha Raja wearing the sacred white Maharashtrian feta (turban), accented with soulful Marathi verses: 'या त्या डोळ्यांचे रूप कधी जाईना, आनंद पोटात मावेना'. A truly touching collectible for true devotees.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "Cast Acrylic with Velvet Matte Texture & Neodymium Magnet",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet"],
+    features: [
+      "Features sacred Marathi lyric calligraphy",
+      "Fine postal stamp serration with Kalaa Culture seal",
+      "High strength neodymium magnet",
+      "Hand-finished in Mumbai"
+    ]
+  },
+  {
+    id: "chinchpoklicha-chintamani-stamp-magnet",
+    slug: "chinchpoklicha-chintamani-stamp-magnet",
+    name: "Chinchpoklicha Chintamani (Hand of Self-Reliance) Magnet",
+    marathiName: "चिंचपोकळीचा चिंतामणी (आत्मनिर्भर हस्त)",
+    subtitle: "105 Years of Devotion • Sudarshan Mudra",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 5.0,
+    reviewsCount: 178,
+    image: "/assets/chintamani_sky.jpg",
+    gallery: [
+      "/assets/chintamani_sky.jpg",
+      "/assets/mumbai_raja_table.jpg"
+    ],
+    tag: "Most Loved",
+    badge: "Chintamani 105",
+    inStock: true,
+    stockCount: 9,
+    description: "Honoring Chinchpokli's beloved 105-year legacy. The divine hand holding the sacred Sudarshan wheel, adorned with gold bracelet, sacred lotus hues, and Kalaa Culture watermark. Symbol of wisdom and self-reliance.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "3mm Acrylic with Micro-Texture Coating & Neodymium Core",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet"],
+    features: [
+      "Sacred Sudarshan chakra mudra artwork",
+      "Authentic Chinchpokli postmark watermark",
+      "Holds multiple notes securely on any ferrous metal",
+      "Weather-proof and fade-resistant"
+    ]
+  },
+  {
+    id: "lalbaugcha-raja-navasacha-magnet",
+    slug: "lalbaugcha-raja-navasacha-magnet",
+    name: "Lalbaugcha Raja (King of Mumbai) Stamp Magnet",
+    marathiName: "लालबागचा राजा (नवसाचा गणपती)",
+    subtitle: "The Wish-Fulfilling King • Golden Throne Darshan",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 5.0,
+    reviewsCount: 260,
+    image: "/assets/lalbaugcha_raja.jpg",
+    gallery: [
+      "/assets/lalbaugcha_raja.jpg",
+      "/assets/lalbaugcha_raja_sky.jpg",
+      "/assets/mumbai_raja_table.jpg"
+    ],
+    tag: "Bestseller",
+    badge: "Emperor of Lalbaug",
+    inStock: true,
+    stockCount: 25,
+    description: "The emperor of Mumbai's Ganesh Utsav. Lalbaugcha Raja seated on his magnificent golden throne under the royal arch, blessing millions of devotees across the globe.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "Premium Cast Acrylic with Gold-Embossed Detailing & Strong Magnet",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet"],
+    features: [
+      "Full throne darshan with intricate temple backdrop",
+      "Stamp perforation contour",
+      "Ultra-strong magnet",
+      "Collector favorite"
+    ]
+  },
+  {
+    id: "mumbai-ganpati-pancharatna-box-set",
+    slug: "mumbai-ganpati-pancharatna-box-set",
+    name: "Mumbai Ganpati Mandal Pancharatna Box Set (5-Piece Bundle)",
+    marathiName: "मुंबई गणपती पंचरत्न भेटपेटी (५ स्टॅम्प मॅग्नेट्स)",
+    subtitle: "Complete Mandal Collection in Luxury Gift Box",
+    category: "collector-boxes",
+    categoryName: "Collector Box Sets",
+    price: 449,
+    originalPrice: 550,
+    rating: 5.0,
+    reviewsCount: 64,
+    image: "/assets/mumbai_raja_table.jpg",
+    gallery: [
+      "/assets/mumbai_raja_table.jpg",
+      "/assets/chintamani_sky.jpg",
+      "/assets/parel_raja_feta.jpg",
+      "/assets/lalbaugcha_raja.jpg"
+    ],
+    tag: "Best Value",
+    badge: "Save ₹101",
+    inStock: true,
+    stockCount: 8,
+    description: "The ultimate collector treasure box containing all 5 iconic Mumbai Ganpatis: Lalbaugcha Raja, Chinchpoklicha Chintamani, Mumbai Cha Raja, Parelcha Raja, and Kalachowkicha Mahaganpati. Comes packaged in a handcrafted luxury rigid box with golden foil embossing and numbered collector certificate.",
+    dimensions: "Box: 8\" × 6\" × 1.5\" | 5 Magnets Included",
+    material: "Rigid Gold-Foil Gift Box + 5 Cast Acrylic Magnets",
+    origin: "Handcrafted in Mumbai",
+    editions: ["Classic Box Set", "Personalized Gift Box (+₹50)"],
+    features: [
+      "All 5 prominent Mumbai Ganpati mandals included",
+      "Luxury crimson and gold gift box packaging",
+      "Collector authenticity card with individual serial number",
+      "Save ₹101 compared to individual purchase",
+      "Ideal gift for housewarmings, festivals, and loved ones"
+    ]
+  },
+  {
+    id: "kalachowki-mahaganpati-stamp-magnet",
+    slug: "kalachowki-mahaganpati-stamp-magnet",
+    name: "Kalachowki Cha Mahaganpati (Hand of Hope) Stamp Magnet",
+    marathiName: "कालाचौकीचा महागणपती (आशेचा हस्त)",
+    subtitle: "Sacred Lotus Mudra • The Hand of Hope",
+    category: "stamp-magnets",
+    categoryName: "Stamp Fridge Magnets",
+    price: 100,
+    originalPrice: 120,
+    rating: 4.8,
+    reviewsCount: 42,
+    image: "/assets/mahaganpati_studio.jpg",
+    gallery: [
+      "/assets/mahaganpati_studio.jpg",
+      "/assets/mahaganpati_sky.jpg"
+    ],
+    tag: "Spiritual Fusion",
+    badge: "New Release",
+    inStock: true,
+    stockCount: 16,
+    description: "Honoring Kalachowki's Mahaganpati with the sacred lotus mudra — the Hand of Hope. Featuring a divine conch shell and pink lotus blossom held by the ornamental hand, Devanagari calligraphy, and Kalaa Culture philatelic seal.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "3mm Cast Acrylic with Matte Protective Coating & Neodymium Magnet",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Postage Magnet"],
+    features: [
+      "Sacred lotus and conch shell mudra artwork",
+      "Die-cut postage stamp perforated edges",
+      "Strong neodymium magnet backing",
+      "Vivid pink and gold color palette"
+    ]
+  },
+  {
+    id: "mumbai-cha-raja-2025-edition",
+    slug: "mumbai-cha-raja-2025-edition",
+    name: "Mumbai Cha Raja (2025 Heritage Edition) Stamp Magnet",
+    marathiName: "मुंबईचा राजा (२०२५ हेरिटेज आवृत्ती)",
+    subtitle: "Ganesh Galli • 2025 Collector Legacy",
+    category: "heritage-decor",
+    categoryName: "Heritage Keepsakes",
+    price: 119,
+    originalPrice: 140,
+    rating: 4.9,
+    reviewsCount: 38,
+    image: "/assets/mumbai_raja_2025.jpg",
+    gallery: [
+      "/assets/mumbai_raja_2025.jpg",
+      "/assets/mumbai_raja_sky.jpg"
+    ],
+    tag: "Heritage Edition",
+    badge: "2025 Legacy",
+    inStock: true,
+    stockCount: 12,
+    description: "The 2025 heritage edition of Mumbai Cha Raja — a legacy collector's piece featuring the divine hand with hibiscus flower, 'Just Trust This Hand You Will Be Fine' inscription, and the classic purple palette. A must-have companion to the 2026 edition.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "3mm Cast Acrylic with Heritage Finish & Neodymium Magnet",
+    origin: "Designed & Handcrafted in Mumbai",
+    editions: ["Standard Heritage Magnet"],
+    features: [
+      "2025 legacy collector edition",
+      "Classic hibiscus flower mudra artwork",
+      "Authentic Ganesh Galli postmark",
+      "Perfect pair with 2026 edition"
+    ]
+  },
+  {
+    id: "mumbai-utsav-vinyl-sticker-pack",
+    slug: "mumbai-utsav-vinyl-sticker-pack",
+    name: "Mumbai Mandal Waterproof Sticker Pack (Set of 6)",
+    marathiName: "मुंबई मंडळ वॉटरप्रूफ स्टिकर्स (६ चा संच)",
+    subtitle: "Die-Cut Vinyl • For Laptops, Bottles & Cars",
+    category: "stickers",
+    categoryName: "Die-Cut Stickers",
+    price: 89,
+    originalPrice: 110,
+    rating: 4.9,
+    reviewsCount: 52,
+    image: "/assets/kalaa_logo.jpg",
+    gallery: [
+      "/assets/kalaa_logo.jpg",
+      "/assets/mumbai_raja_table.jpg"
+    ],
+    tag: "Waterproof",
+    badge: "Pack of 6",
+    inStock: true,
+    stockCount: 30,
+    description: "Set of 6 ultra-durable matte vinyl stickers engineered for laptops, hydro flasks, diaries, and vehicles. UV-resistant, scratch-proof, and 100% waterproof. Features deity silhouettes and artistic Marathi typography.",
+    dimensions: "Assorted sizes: 2.5\" to 3.5\"",
+    material: "Heavy-Duty Vinyl with Matte UV Protective Overlaminate",
+    origin: "Mumbai, Maharashtra",
+    editions: ["Standard 6-Pack", "Deluxe 12-Pack (+₹70)"],
+    features: [
+      "100% waterproof, weatherproof, and dishwasher-safe",
+      "Residue-free removal",
+      "Vibrant high-contrast prints",
+      "Designed specifically for everyday devices"
+    ]
+  },
+  {
+    id: "parelcha-raja-special-edition-magnet",
+    slug: "parelcha-raja-special-edition-magnet",
+    name: "Parelcha Raja (Special Edition) Stamp Magnet",
+    marathiName: "परळचा राजा (स्पेशल एडिशन)",
+    subtitle: "Sur He Dhol Taashanchi Firki • Dancing King",
+    category: "heritage-decor",
+    categoryName: "Heritage Keepsakes",
+    price: 119,
+    originalPrice: 140,
+    rating: 4.8,
+    reviewsCount: 29,
+    image: "/assets/parel_raja_special.jpg",
+    gallery: [
+      "/assets/parel_raja_special.jpg",
+      "/assets/parel_raja_sky.jpg"
+    ],
+    tag: "Festival Special",
+    badge: "Limited Stock",
+    inStock: true,
+    stockCount: 15,
+    description: "A special edition celebrating the dancing avatar of Parelcha Raja — the majestic standing idol with dholak and veena, in vibrant orange and gold. Capturing the spirit of sur, taal, and devotion.",
+    dimensions: "3.25\" × 2.4\" (8.25 cm × 6.1 cm)",
+    material: "3mm Cast Acrylic with Premium Finish & Neodymium Magnet",
+    origin: "Mumbai, Maharashtra",
+    editions: ["Standard Magnet"],
+    features: [
+      "Full standing idol with musical instruments",
+      "Vibrant orange and gold palette",
+      "Neodymium magnet for reliable hold",
+      "Collector-grade Kalaa Culture seal"
+    ]
+  },
+  {
+    id: "lalbaugcha-raja-sky-darshan-magnet",
+    slug: "lalbaugcha-raja-sky-darshan-magnet",
+    name: "Lalbaugcha Raja (Obsessed With His Eyes) Heritage Magnet",
+    marathiName: "लालबागचा राजा (त्याच्या डोळ्यांनी वेड)",
+    subtitle: "Close-up Darshan • Om Tilak Portrait",
+    category: "heritage-decor",
+    categoryName: "Heritage Keepsakes",
+    price: 129,
+    originalPrice: 150,
+    rating: 5.0,
+    reviewsCount: 47,
+    image: "/assets/lalbaugcha_raja_sky.jpg",
+    gallery: [
+      "/assets/lalbaugcha_raja_sky.jpg",
+      "/assets/lalbaugcha_raja.jpg"
+    ],
+    tag: "Mumbai Culture",
+    badge: "Devotee Favorite",
+    inStock: true,
+    stockCount: 20,
+    description: "An intimate close-up darshan of Lalbaugcha Raja's divine face — featuring the sacred Om tilak, mesmerizing eyes, ornamental ears, and the tagline 'Obsessed With His Eyes'. A deeply spiritual keepsake for true bhaktas.",
+    dimensions: "3.5\" × 2.25\" Magnet",
+    material: "3mm Cast Acrylic with Heavy Neodymium Backing",
+    origin: "Mumbai, Maharashtra",
+    editions: ["Standard Magnet"],
+    features: [
+      "Close-up divine face portrait with Om tilak",
+      "High strength neodymium magnet",
+      "Authentic Lalbaug postmark seal",
+      "'Obsessed With His Eyes' collector tagline"
+    ]
+  }
+];
+
+export const CATEGORIES = [
+  { id: "all", name: "All Collectibles", count: 12 },
+  { id: "stamp-magnets", name: "Stamp Fridge Magnets", count: 7 },
+  { id: "collector-boxes", name: "Collector Box Sets", count: 1 },
+  { id: "heritage-decor", name: "Heritage Keepsakes", count: 3 },
+  { id: "stickers", name: "Die-Cut Stickers", count: 1 }
+];
+
+export const BRAND_INFO = {
+  name: "KALAA CULTURE",
+  handle: "@kalaaculture",
+  instagramUrl: "https://www.instagram.com/kalaaculture?vrfl=MXBmOGN6emY5MTFz",
+  tagline: "Where Tradition Meets Modern Design",
+  bio: "Modernizing sacred cultural icons and Mumbai Ganpati heritage through philatelic keepsakes, postage stamp magnets, and premium lifestyle artifacts.",
+  phone1: "+91 78750 05963",
+  phone2: "+91 78759 00563",
+  email: "care@kalaaculture.com",
+  location: "Mumbai, Maharashtra, India",
+  shippingThreshold: 399,
+  shippingCost: 49,
+  coupons: [
+    { code: "GANPATI10", discountPercent: 10, minSpend: 200, desc: "10% off on all orders above ₹200" },
+    { code: "KALAAFIRST", discountAmount: 50, minSpend: 300, desc: "₹50 flat off on your first order above ₹300" }
+  ]
+};

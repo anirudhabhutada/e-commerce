@@ -1,0 +1,454 @@
+/* ==========================================================================
+   KALAA CULTURE DESIGN SYSTEM
+   "Where Tradition Meets Modern Design"
+   Tokens, Typography, Reset, Utilities & Responsive Framework
+   ========================================================================== */
+
+:root {
+  /* Brand Core Color Tokens */
+  --color-primary: #7B1123;         /* Regal Kumkum Maroon / Crimson */
+  --color-primary-dark: #580B18;    /* Deep Velvet Wine */
+  --color-primary-deep: #3A050F;    /* Obsidian Maroon */
+  --color-primary-light: #9B1D33;   /* Vivid Crimson */
+  --color-primary-soft: #F9ECEE;    /* Soft Blush Maroon Tint */
+
+  /* Temple Gold & Saffron Accents */
+  --color-gold: #D4AF37;            /* Royal Mandir Gold */
+  --color-gold-hover: #C59B27;      /* Burnished Antique Gold */
+  --color-gold-deep: #996515;       /* Saffron Ochre */
+  --color-gold-light: #F7E7B4;      /* Soft Champagne Gold */
+  --color-gold-glow: rgba(212, 175, 55, 0.25);
+
+  /* Heritage Post & Cultural Accents */
+  --color-azure: #1E3A8A;           /* Postage Stamp Heritage Blue */
+  --color-azure-light: #E0F2FE;
+  --color-saffron: #EA580C;
+
+  /* Surfaces & Backgrounds */
+  --color-bg: #FAF7F2;              /* Warm Khadi Silk / Linen Ivory */
+  --color-bg-card: #FFFFFF;         /* Crisp Card White */
+  --color-bg-subtle: #F4EFE8;       /* Warm Secondary Surface */
+  --color-bg-dark: #1A1315;         /* Deep Velvet Dark for Footer / Feature */
+  --color-bg-dark-card: #251B1E;
+
+  /* Text & Typography Hierarchy */
+  --color-text-main: #1C1517;       /* Espresso Umber for high contrast */
+  --color-text-muted: #645659;      /* Refined Muted Gray */
+  --color-text-light: #8E7D80;      /* Secondary Light Muted */
+  --color-text-inverse: #FFFFFF;    /* Pure White on Dark */
+  --color-text-gold: #D4AF37;
+
+  /* Borders & Dividers */
+  --color-border: #E8DFD5;          /* Warm Parchment Border */
+  --color-border-subtle: #F0E8DF;
+  --color-border-gold: rgba(212, 175, 55, 0.45);
+
+  /* Feedback & Badges */
+  --color-success: #15803D;
+  --color-success-bg: #F0FDF4;
+  --color-warning: #B45309;
+  --color-warning-bg: #FEF3C7;
+  --color-error: #B91C1C;
+  --color-error-bg: #FEF2F2;
+
+  /* Typography Scales */
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-devanagari: 'Tiro Devanagari Marathi', 'Rozha One', 'Cormorant Garamond', serif;
+
+  /* Shadows & Elevations */
+  --shadow-sm: 0 1px 3px rgba(28, 21, 23, 0.05);
+  --shadow-md: 0 4px 14px rgba(28, 21, 23, 0.08);
+  --shadow-lg: 0 12px 32px rgba(28, 21, 23, 0.12);
+  --shadow-gold: 0 8px 24px rgba(212, 175, 55, 0.22);
+  --shadow-crimson: 0 8px 28px rgba(123, 17, 35, 0.25);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Spacing Scale */
+  --container-max: 1280px;
+  --header-height: 80px;
+  --announcement-height: 38px;
+}
+
+/* ==========================================================================
+   CSS RESET & CORE DEFAULTS
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-text-main);
+}
+
+.devanagari-text {
+  font-family: var(--font-devanagari);
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   LAYOUT UTILITIES
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* Flex & Grid Helpers */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+
+/* Section Header Typography */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.section-eyebrow::before,
+.section-eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background-color: var(--color-gold);
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1.0625rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.875rem 1.75rem;
+  border-radius: 4px;
+  transition: all var(--transition-normal);
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  min-height: 48px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 4px 12px rgba(123, 17, 35, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-crimson);
+}
+
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-primary-deep);
+  border: 1px solid var(--color-gold);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.25);
+}
+
+.btn-gold:hover {
+  background-color: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 1.5px solid var(--color-gold);
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--color-primary-deep);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  min-height: 38px;
+}
+
+.btn-lg {
+  padding: 1rem 2.25rem;
+  font-size: 1.0625rem;
+  min-height: 54px;
+}
+
+/* ==========================================================================
+   PHILATELIC STAMP PERFORATION FRAME (BRAND SIGNATURE)
+   ========================================================================== */
+
+.stamp-frame {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 6px solid #FFFFFF;
+  outline: 1px solid var(--color-border);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.stamp-frame:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stamp-serrated-border {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 8px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+}
+
+/* ==========================================================================
+   BADGES & CHIPS
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 2px;
+}
+
+.badge-gold {
+  background-color: var(--color-gold-light);
+  color: var(--color-gold-deep);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.badge-crimson {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+  border: 1px solid rgba(123, 17, 35, 0.2);
+}
+
+.badge-azure {
+  background-color: var(--color-azure-light);
+  color: var(--color-azure);
+  border: 1px solid rgba(30, 58, 138, 0.2);
+}
+
+/* ==========================================================================
+   FORM CONTROLS
+   ========================================================================== */
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: var(--color-text-main);
+  font-size: 0.9375rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(123, 17, 35, 0.12);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ==========================================================================
+   ANIMATIONS & ACCESSIBILITY
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-fade {
+  animation: fadeIn 350ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Keyboard Accessibility Focus Rings */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
