@@ -38,11 +38,13 @@ export const Header = () => {
         <div className="container announcement-inner">
           <div className="announcement-item">
             <Truck size={14} aria-hidden="true" />
-            <span>Free Delivery across India on orders above ₹{BRAND_INFO.shippingThreshold}</span>
+            <span className="announcement-desktop-text">Free Delivery across India on orders above ₹{BRAND_INFO.shippingThreshold}</span>
+            <span className="announcement-mobile-text">Free Delivery &gt; ₹{BRAND_INFO.shippingThreshold}</span>
           </div>
-          <div className="announcement-separator" aria-hidden="true">|</div>
+          <div className="announcement-separator" aria-hidden="true">•</div>
           <div className="announcement-item highlight">
-            <span>Use code <strong>GANPATI10</strong> for 10% off</span>
+            <span className="announcement-desktop-text">Use code <strong>GANPATI10</strong> for 10% off</span>
+            <span className="announcement-mobile-text">Code: <strong>GANPATI10</strong> (10% off)</span>
           </div>
           <div className="announcement-separator desktop-only" aria-hidden="true">|</div>
           <div className="announcement-item desktop-only">
@@ -168,7 +170,7 @@ export const Header = () => {
             {/* Wishlist Trigger */}
             <button 
               type="button" 
-              className="action-icon-btn wishlist-btn"
+              className="action-icon-btn wishlist-btn desktop-only"
               onClick={() => handleNav('shop')}
               aria-label={`Wishlist (${wishlist.length} items)`}
               title="Saved Items"
